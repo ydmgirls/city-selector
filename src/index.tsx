@@ -155,7 +155,6 @@ const Component: any = ({
 
   return (
     <div className="city-selector-wrapper" ref={ref}>
-      {/* <div className="textarea-wrapper"> */}
       <div className="city-selector-toggle-textbox-wrapper">
         <input
           className="city-selector-toggle-textbox"
@@ -189,7 +188,7 @@ const Component: any = ({
               onChange={onSearch}
               value={searchText}
               className="city-selector-search-input"
-              placeholder="search"
+              placeholder="收搜"
             />
             <svg
               className="city-selector-search-icon"

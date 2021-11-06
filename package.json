@@ -1,5 +1,5 @@
 {
-  "name": "city-selector",
+  "name": "react-chinese-city-picker",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -8,8 +8,13 @@
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "TheaFeng",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ydmgirls/city-selector"
+  },
+  "homepage": "https://github.com/ydmgirls/city-selector",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-class-properties": "^7.16.0",
