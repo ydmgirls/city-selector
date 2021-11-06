@@ -1,0 +1,185 @@
+.city-selector-wrapper * {
+  box-sizing: border-box;
+}
+.city-selector-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.city-selector-wrapper input {
+  background: none;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.city-selector-wrapper input:focus {
+  background: white;
+  outline: none;
+  border: 1px solid #9fa6ad;
+}
+.city-selector-wrapper .city-selector-toggle-textbox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dbdbdb;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-left: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+.city-selector-wrapper .city-selector-toggle-textbox:hover,
+.city-selector-wrapper .city-selector-search-input:hover {
+  border: 1px solid #9fa6ad;
+}
+.city-selector-wrapper .city-selector-dropdown-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  overflow: scroll;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #dbdbdb;
+  background-color: #fff;
+}
+.city-selector-wrapper
+  .city-selector-search-wrapper
+  .city-selector-search-input-wrapper {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  height: 35px;
+}
+.city-selector-wrapper
+  .city-selector-search-wrapper
+  .city-selector-search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.city-selector-wrapper
+  .city-selector-search-wrapper
+  .city-selector-search-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 20px;
+  border: 1px solid #dbdbdb;
+}
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1;
+}
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-searched-list {
+  width: 100%;
+  max-height: 150px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.text-blue {
+  color: blue;
+}
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-searched-list
+  .city-selector-search-item {
+  font-size: 16px;
+}
+
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-province,
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-city {
+  width: 50%;
+  max-height: 140px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-province
+  div,
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-city
+  div {
+  position: relative;
+  padding: 8px 25px;
+  text-align: left;
+}
+.city-selector-wrapper
+  .city-selector-dropdown-wrapper
+  .city-selector-options-wrapper
+  .city-selector-province
+  .city-selector-item:after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) rotate(-45deg);
+  border-right: 1px solid #9fa6ad;
+  border-bottom: 1px solid #9fa6ad;
+}
+@media (hover: hover) and (pointer: fine) {
+  .city-selector-wrapper
+    .city-selector-dropdown-wrapper
+    .city-selector-options-wrapper
+    .city-selector-item:hover {
+    color: blue;
+    background-color: #eafafe;
+  }
+}
+
+.city-selector-wrapper .selected {
+  color: blue;
+  background-color: #eafafe;
+}
+.city-selector-wrapper .city-selector-toggle-textbox-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.city-selector-wrapper .city-selector-toggle-textbox-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 1px solid #9fa6ad;
+  border-bottom: 1px solid #9fa6ad;
+}
+.city-selector-wrapper
+  .city-selector-toggle-textbox-wrapper
+  .city-selector-delete-icon {
+  position: absolute;
+  color: #9fa6ad;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 33px;
+  font-size: 18px;
+  cursor: pointer;
+}
