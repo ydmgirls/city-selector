@@ -188,7 +188,7 @@ const Component: any = ({
               onChange={onSearch}
               value={searchText}
               className="city-selector-search-input"
-              placeholder="收搜"
+              placeholder="搜索"
             />
             <svg
               className="city-selector-search-icon"
