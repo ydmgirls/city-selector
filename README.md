@@ -46,7 +46,7 @@ function App() {
 }
 ```
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/9278601/140610008-1f779ef1-42f7-4c29-90dd-5a76714e4b10.gif)
+![convert](https://user-images.githubusercontent.com/9278601/140640149-9fcc10ff-f8ba-4272-8394-8726b6675d57.gif)
 
 
 # Properties
