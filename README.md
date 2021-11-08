@@ -4,24 +4,24 @@ A React chinese city selector component
 
 # Install
 
-```
+```npm
 npm install react-chinese-city-selector
 ```
 
 # Usage
 
-```
+```javascript
 import CitySelector from "react-chinese-city-selector";
 import "react-chinese-city-selector/dist/index.css";
 ```
 
-```
+```html
 <CitySelector value={text} onSelect={onSelect}></CitySelector>
 ```
 
 ### Example
 
-```
+```javascript
 function App() {
   const onSelect = (
     e: React.MouseEvent<HTMLElement>,
