@@ -49,8 +49,7 @@ function App() {
   );
 }
 ```
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/9278601/140640416-4d7c7d31-f383-4b1b-bc23-336d4a725168.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/9278601/140865444-62540dd0-5b93-44e3-adb4-fd18675d2f7e.gif)
 
 # Properties
 
