@@ -5,11 +5,13 @@ import location from "./location.json";
 const Component: any = ({
   value,
   name,
+  size,
   placeholder,
   onSelect,
 }: {
   value: string;
   name?: string;
+  size?: string;
   placeholder?: string;
   onSelect?: (
     event: React.MouseEvent<HTMLElement>,
@@ -24,6 +26,7 @@ const Component: any = ({
   const [province, setProvince] = useState("");
   const [city, setCity] = useState(value);
   const [searchText, setSearchText] = useState("");
+  const [displayedValue, setDisplayedValue] = useState("");
   const ref = useRef<any>(null);
 
   const initData = (value: string) => {
@@ -36,6 +39,7 @@ const Component: any = ({
       province.children.filter((c: any) => {
         if (c.value === value) {
           setProvince(province.value);
+          setDisplayedValue(province.value + "/" + c.value);
           setCities(
             location.find((p: any) => p.value === province.value)?.children
           );
@@ -76,6 +80,7 @@ const Component: any = ({
   }, [showDropdown]);
 
   const onChange = (value: string) => {
+    setCity("");
     setProvince(value);
     setCities(location.find((p: any) => p.value === value)?.children);
   };
@@ -83,6 +88,7 @@ const Component: any = ({
   const onCitySelect = (e: React.MouseEvent<HTMLElement>, value: string) => {
     setShowDropdown(false);
     setCity(value);
+    setDisplayedValue(province + "/" + value);
     onSelect && onSelect(e, { province, city: value });
   };
 
@@ -95,7 +101,6 @@ const Component: any = ({
 
   const scrollToTop = () => {
     const c = document.getElementsByClassName("city-selector-province");
-    console.log(c);
     for (let i = 0; i < c.length; i++) {
       c[i].scrollTop = 0;
     }
@@ -106,6 +111,7 @@ const Component: any = ({
     pValue: string,
     cValue: string
   ) => {
+    setDisplayedValue(pValue + "/" + cValue);
     setShowSearchList(false);
     setShowDropdown(false);
     setCity(cValue);
@@ -154,14 +160,19 @@ const Component: any = ({
   };
 
   return (
-    <div className="city-selector-wrapper" ref={ref}>
+    <div
+      className={`city-selector-wrapper ${
+        size ? "city-selector-" + size : "city-selector-large"
+      }`}
+      ref={ref}
+    >
       <div className="city-selector-toggle-textbox-wrapper">
         <input
           className="city-selector-toggle-textbox"
           name={name ? name : "city"}
           onClick={(e: any) => handleSelect(e)}
           placeholder={placeholder ? placeholder : "请选择城市"}
-          value={city}
+          value={displayedValue}
           readOnly
         />
         <div
@@ -171,6 +182,7 @@ const Component: any = ({
             onSelect && onSelect(e, { province: "", city: "" });
             setCity("");
             setProvince("");
+            setDisplayedValue("");
             setCities([]);
             scrollToTop();
           }}
@@ -196,8 +208,8 @@ const Component: any = ({
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               p-id="1203"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
             >
               <defs>
                 <style type="text/css"></style>
