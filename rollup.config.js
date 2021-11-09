@@ -18,7 +18,7 @@ export default {
   output: {
     dir: "dist", // Directory where rollup.js will put the built files
     sourcemap: true, // We want a source map to trace the original code
-    format: "esm", // Built files will follow ES Module format
+    format: "cjs", // Built files will follow ES Module format
     preserveModules: true, // This one is important for treeshaking features of our library
   },
   plugins: [

@@ -190,80 +190,82 @@ const Component: any = ({
           &times;
         </div>
       </div>
-      <div
-        className="city-selector-dropdown-wrapper"
-        style={{ display: `${showDropdown ? "inline-block" : "none"}` }}
-      >
-        <div className="city-selector-search-wrapper">
-          <div className="city-selector-search-input-wrapper">
-            <input
-              onChange={onSearch}
-              value={searchText}
-              className="city-selector-search-input"
-              placeholder="搜索"
-            />
-            <svg
-              className="city-selector-search-icon"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              p-id="1203"
-              width="16"
-              height="16"
-            >
-              <defs>
-                <style type="text/css"></style>
-              </defs>
-              <path
-                d="M760.090355 263.551488c-17.47807-41.321104-42.487673-78.426187-74.343195-110.281709s-68.960605-56.865125-110.281709-74.343195c-42.784432-18.092054-88.219227-27.27111-135.055952-27.27111-46.826492 0-92.261287 9.179057-135.055952 27.27111-41.310871 17.47807-78.415954 42.487673-110.271476 74.343195s-56.865125 68.960605-74.343195 110.281709c-18.092054 42.784432-27.27111 88.219227-27.27111 135.055952 0 46.826492 9.179057 92.261287 27.27111 135.055952 17.47807 41.310871 42.487673 78.415954 74.343195 110.271476s68.960605 56.865125 110.271476 74.343195c42.794665 18.092054 88.22946 27.27111 135.055952 27.27111 46.836725 0 92.27152-9.179057 135.055952-27.27111 41.321104-17.47807 78.426187-42.487673 110.281709-74.343195s56.865125-68.960605 74.343195-110.271476c18.092054-42.794665 27.27111-88.22946 27.27111-135.055952C787.361465 351.770715 778.182408 306.33592 760.090355 263.551488zM656.797827 614.985536c-57.796334 57.796334-134.64663 89.63139-216.388329 89.63139s-158.581762-31.835056-216.378096-89.63139c-57.796334-57.786101-89.63139-134.636397-89.63139-216.378096s31.835056-158.591995 89.63139-216.388329 134.636397-89.63139 216.378096-89.63139 158.591995 31.835056 216.388329 89.63139c57.796334 57.796334 89.63139 134.64663 89.63139 216.388329S714.594161 557.199435 656.797827 614.985536z"
-                p-id="1204"
-                fill="#bfbfbf"
-              ></path>
-              <path
-                d="M954.805058 933.397493c-3.990894 4.001127-9.230222 5.996574-14.46955 5.996574s-10.478655-1.995447-14.46955-5.996574l-193.855126-193.844893c-7.981788-7.992021-7.981788-20.947078 0-28.939099 8.002254-7.992021 20.957311-7.992021 28.949332 0l193.844893 193.844893C962.79708 912.450415 962.79708 925.405471 954.805058 933.397493z"
-                p-id="1205"
-                fill="#bfbfbf"
-              ></path>
-            </svg>
+      <div style={{ position: "relative" }}>
+        <div
+          className="city-selector-dropdown-wrapper"
+          style={{ display: `${showDropdown ? "inline-block" : "none"}` }}
+        >
+          <div className="city-selector-search-wrapper">
+            <div className="city-selector-search-input-wrapper">
+              <input
+                onChange={onSearch}
+                value={searchText}
+                className="city-selector-search-input"
+                placeholder="搜索"
+              />
+              <svg
+                className="city-selector-search-icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="1203"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <style type="text/css"></style>
+                </defs>
+                <path
+                  d="M760.090355 263.551488c-17.47807-41.321104-42.487673-78.426187-74.343195-110.281709s-68.960605-56.865125-110.281709-74.343195c-42.784432-18.092054-88.219227-27.27111-135.055952-27.27111-46.826492 0-92.261287 9.179057-135.055952 27.27111-41.310871 17.47807-78.415954 42.487673-110.271476 74.343195s-56.865125 68.960605-74.343195 110.281709c-18.092054 42.784432-27.27111 88.219227-27.27111 135.055952 0 46.826492 9.179057 92.261287 27.27111 135.055952 17.47807 41.310871 42.487673 78.415954 74.343195 110.271476s68.960605 56.865125 110.271476 74.343195c42.794665 18.092054 88.22946 27.27111 135.055952 27.27111 46.836725 0 92.27152-9.179057 135.055952-27.27111 41.321104-17.47807 78.426187-42.487673 110.281709-74.343195s56.865125-68.960605 74.343195-110.271476c18.092054-42.794665 27.27111-88.22946 27.27111-135.055952C787.361465 351.770715 778.182408 306.33592 760.090355 263.551488zM656.797827 614.985536c-57.796334 57.796334-134.64663 89.63139-216.388329 89.63139s-158.581762-31.835056-216.378096-89.63139c-57.796334-57.786101-89.63139-134.636397-89.63139-216.378096s31.835056-158.591995 89.63139-216.388329 134.636397-89.63139 216.378096-89.63139 158.591995 31.835056 216.388329 89.63139c57.796334 57.796334 89.63139 134.64663 89.63139 216.388329S714.594161 557.199435 656.797827 614.985536z"
+                  p-id="1204"
+                  fill="#bfbfbf"
+                ></path>
+                <path
+                  d="M954.805058 933.397493c-3.990894 4.001127-9.230222 5.996574-14.46955 5.996574s-10.478655-1.995447-14.46955-5.996574l-193.855126-193.844893c-7.981788-7.992021-7.981788-20.947078 0-28.939099 8.002254-7.992021 20.957311-7.992021 28.949332 0l193.844893 193.844893C962.79708 912.450415 962.79708 925.405471 954.805058 933.397493z"
+                  p-id="1205"
+                  fill="#bfbfbf"
+                ></path>
+              </svg>
+            </div>
           </div>
-        </div>
-        <div className="city-selector-options-wrapper">
-          {showSearchList ? (
-            <div className="city-selector-searched-list">{searchList}</div>
-          ) : (
-            <>
-              <div className="city-selector-province">
-                {provinces.map((p: any) => (
-                  <div
-                    key={p.value}
-                    className={`city-selector-item ${
-                      province === p.value ? "selected" : ""
-                    }`}
-                    onClick={() => {
-                      onChange(p.value);
-                    }}
-                  >
-                    {p.value}
-                  </div>
-                ))}
-              </div>
-              <div className="city-selector-city">
-                {cities.map((c: any) => (
-                  <div
-                    key={c.value}
-                    className={`city-selector-item ${
-                      city === c.value ? "selected" : ""
-                    }`}
-                    onClick={(e: React.MouseEvent<HTMLElement>) =>
-                      onCitySelect(e, c.value)
-                    }
-                  >
-                    {c.value}
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
+          <div className="city-selector-options-wrapper">
+            {showSearchList ? (
+              <div className="city-selector-searched-list">{searchList}</div>
+            ) : (
+              <>
+                <div className="city-selector-province">
+                  {provinces.map((p: any) => (
+                    <div
+                      key={p.value}
+                      className={`city-selector-item ${
+                        province === p.value ? "selected" : ""
+                      }`}
+                      onClick={() => {
+                        onChange(p.value);
+                      }}
+                    >
+                      {p.value}
+                    </div>
+                  ))}
+                </div>
+                <div className="city-selector-city">
+                  {cities.map((c: any) => (
+                    <div
+                      key={c.value}
+                      className={`city-selector-item ${
+                        city === c.value ? "selected" : ""
+                      }`}
+                      onClick={(e: React.MouseEvent<HTMLElement>) =>
+                        onCitySelect(e, c.value)
+                      }
+                    >
+                      {c.value}
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

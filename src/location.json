@@ -2,46 +2,12 @@
   {
     "label": "北京市",
     "value": "北京市",
-    "children": [
-      { "label": "东城区", "value": "东城区" },
-      { "label": "西城区", "value": "西城区" },
-      { "label": "朝阳区", "value": "朝阳区" },
-      { "label": "丰台区", "value": "丰台区" },
-      { "label": "石景山区", "value": "石景山区" },
-      { "label": "海淀区", "value": "海淀区" },
-      { "label": "门头沟区", "value": "门头沟区" },
-      { "label": "房山区", "value": "房山区" },
-      { "label": "通州区", "value": "通州区" },
-      { "label": "顺义区", "value": "顺义区" },
-      { "label": "昌平区", "value": "昌平区" },
-      { "label": "大兴区", "value": "大兴区" },
-      { "label": "怀柔区", "value": "怀柔区" },
-      { "label": "平谷区", "value": "平谷区" },
-      { "label": "密云区", "value": "密云区" },
-      { "label": "延庆区", "value": "延庆区" }
-    ]
+    "children": [{ "label": "北京市", "value": "北京市" }]
   },
   {
     "label": "天津市",
     "value": "天津市",
-    "children": [
-      { "label": "和平区", "value": "和平区" },
-      { "label": "河东区", "value": "河东区" },
-      { "label": "河西区", "value": "河西区" },
-      { "label": "南开区", "value": "南开区" },
-      { "label": "河北区", "value": "河北区" },
-      { "label": "红桥区", "value": "红桥区" },
-      { "label": "东丽区", "value": "东丽区" },
-      { "label": "西青区", "value": "西青区" },
-      { "label": "津南区", "value": "津南区" },
-      { "label": "北辰区", "value": "北辰区" },
-      { "label": "武清区", "value": "武清区" },
-      { "label": "宝坻区", "value": "宝坻区" },
-      { "label": "滨海新区", "value": "滨海新区" },
-      { "label": "宁河区", "value": "宁河区" },
-      { "label": "静海区", "value": "静海区" },
-      { "label": "蓟州区", "value": "蓟州区" }
-    ]
+    "children": [{ "label": "天津市", "value": "天津市" }]
   },
   {
     "label": "河北省",
@@ -152,24 +118,7 @@
   {
     "label": "上海市",
     "value": "上海市",
-    "children": [
-      { "label": "黄浦区", "value": "黄浦区" },
-      { "label": "徐汇区", "value": "徐汇区" },
-      { "label": "长宁区", "value": "长宁区" },
-      { "label": "静安区", "value": "静安区" },
-      { "label": "普陀区", "value": "普陀区" },
-      { "label": "虹口区", "value": "虹口区" },
-      { "label": "杨浦区", "value": "杨浦区" },
-      { "label": "闵行区", "value": "闵行区" },
-      { "label": "宝山区", "value": "宝山区" },
-      { "label": "嘉定区", "value": "嘉定区" },
-      { "label": "浦东新区", "value": "浦东新区" },
-      { "label": "金山区", "value": "金山区" },
-      { "label": "松江区", "value": "松江区" },
-      { "label": "青浦区", "value": "青浦区" },
-      { "label": "奉贤区", "value": "奉贤区" },
-      { "label": "崇明区", "value": "崇明区" }
-    ]
+    "children": [{ "label": "上海市", "value": "上海市" }]
   },
   {
     "label": "江苏省",
@@ -425,46 +374,7 @@
   {
     "label": "重庆市",
     "value": "重庆市",
-    "children": [
-      { "label": "万州区", "value": "万州区" },
-      { "label": "涪陵区", "value": "涪陵区" },
-      { "label": "渝中区", "value": "渝中区" },
-      { "label": "大渡口区", "value": "大渡口区" },
-      { "label": "江北区", "value": "江北区" },
-      { "label": "沙坪坝区", "value": "沙坪坝区" },
-      { "label": "九龙坡区", "value": "九龙坡区" },
-      { "label": "南岸区", "value": "南岸区" },
-      { "label": "北碚区", "value": "北碚区" },
-      { "label": "綦江区", "value": "綦江区" },
-      { "label": "大足区", "value": "大足区" },
-      { "label": "渝北区", "value": "渝北区" },
-      { "label": "巴南区", "value": "巴南区" },
-      { "label": "黔江区", "value": "黔江区" },
-      { "label": "长寿区", "value": "长寿区" },
-      { "label": "江津区", "value": "江津区" },
-      { "label": "合川区", "value": "合川区" },
-      { "label": "永川区", "value": "永川区" },
-      { "label": "南川区", "value": "南川区" },
-      { "label": "璧山区", "value": "璧山区" },
-      { "label": "铜梁区", "value": "铜梁区" },
-      { "label": "潼南区", "value": "潼南区" },
-      { "label": "荣昌区", "value": "荣昌区" },
-      { "label": "开州区", "value": "开州区" },
-      { "label": "梁平区", "value": "梁平区" },
-      { "label": "武隆区", "value": "武隆区" },
-      { "label": "城口县", "value": "城口县" },
-      { "label": "丰都县", "value": "丰都县" },
-      { "label": "垫江县", "value": "垫江县" },
-      { "label": "忠县", "value": "忠县" },
-      { "label": "云阳县", "value": "云阳县" },
-      { "label": "奉节县", "value": "奉节县" },
-      { "label": "巫山县", "value": "巫山县" },
-      { "label": "巫溪县", "value": "巫溪县" },
-      { "label": "石柱土家族自治县", "value": "石柱土家族自治县" },
-      { "label": "秀山土家族苗族自治县", "value": "秀山土家族苗族自治县" },
-      { "label": "酉阳土家族苗族自治县", "value": "酉阳土家族苗族自治县" },
-      { "label": "彭水苗族土家族自治县", "value": "彭水苗族土家族自治县" }
-    ]
+    "children": [{ "label": "重庆市", "value": "重庆市" }]
   },
   {
     "label": "四川省",
@@ -633,5 +543,20 @@
       { "label": "昆玉市", "value": "昆玉市" },
       { "label": "胡杨河市", "value": "胡杨河市" }
     ]
+  },
+  {
+    "label": "香港",
+    "value": "香港",
+    "children": [{ "label": "香港", "value": "香港" }]
+  },
+  {
+    "label": "澳门",
+    "value": "澳门",
+    "children": [{ "label": "澳门", "value": "澳门" }]
+  },
+  {
+    "label": "台湾",
+    "value": "台湾",
+    "children": [{ "label": "台湾", "value": "台湾" }]
   }
 ]
