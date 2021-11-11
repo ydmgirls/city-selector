@@ -93,10 +93,12 @@ const Component: any = ({
   };
 
   const scrollToView = () => {
-    const c = document.getElementsByClassName("selected");
-    for (let i = 0; i < c.length; i++) {
-      c[i].scrollIntoView();
-    }
+    const city: any = document.getElementsByClassName("city-selector-c");
+    const province: any = document.getElementsByClassName("city-selector-p");
+    const sp: any = document.getElementById("city-selector-province");
+    const sc: any = document.getElementById("city-selector-city");
+    sc.scrollTop = city[0].offsetTop - 55;
+    sp.scrollTop = province[0].offsetTop - 55;
   };
 
   const scrollToTop = () => {
@@ -233,12 +235,15 @@ const Component: any = ({
               <div className="city-selector-searched-list">{searchList}</div>
             ) : (
               <>
-                <div className="city-selector-province">
+                <div
+                  className="city-selector-province"
+                  id="city-selector-province"
+                >
                   {provinces.map((p: any) => (
                     <div
                       key={p.value}
                       className={`city-selector-item ${
-                        province === p.value ? "selected" : ""
+                        province === p.value ? "selected city-selector-p" : ""
                       }`}
                       onClick={() => {
                         onChange(p.value);
@@ -248,12 +253,12 @@ const Component: any = ({
                     </div>
                   ))}
                 </div>
-                <div className="city-selector-city">
+                <div className="city-selector-city" id="city-selector-city">
                   {cities.map((c: any) => (
                     <div
                       key={c.value}
                       className={`city-selector-item ${
-                        city === c.value ? "selected" : ""
+                        city === c.value ? "selected city-selector-c" : ""
                       }`}
                       onClick={(e: React.MouseEvent<HTMLElement>) =>
                         onCitySelect(e, c.value)
