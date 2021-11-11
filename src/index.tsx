@@ -97,8 +97,12 @@ const Component: any = ({
     const province: any = document.getElementsByClassName("city-selector-p");
     const sp: any = document.getElementById("city-selector-province");
     const sc: any = document.getElementById("city-selector-city");
-    sc.scrollTop = city[0].offsetTop - 55;
-    sp.scrollTop = province[0].offsetTop - 55;
+    if (city[0]) {
+      sc.scrollTop = city[0].offsetTop - 55;
+    }
+    if (province[0]) {
+      sp.scrollTop = province[0].offsetTop - 55;
+    }
   };
 
   const scrollToTop = () => {
