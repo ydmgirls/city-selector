@@ -1,3 +1,4 @@
+import { join } from "path/posix";
 import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
 import location from "./location.json";
@@ -33,6 +34,10 @@ const Component: any = ({
     setCities(location.find((p: any) => p.value === value)?.children);
     setProvinces(location);
   };
+
+  useEffect(() => {
+    setCity(value);
+  }, [value]);
 
   useEffect(() => {
     location.map((province: any) => {
