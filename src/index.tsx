@@ -1,4 +1,3 @@
-import { join } from "path/posix";
 import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
 import location from "./location.json";
@@ -37,9 +36,6 @@ const Component: any = ({
 
   useEffect(() => {
     setCity(value);
-  }, [value]);
-
-  useEffect(() => {
     location.map((province: any) => {
       province.children.filter((c: any) => {
         if (c.value === value) {
@@ -52,7 +48,7 @@ const Component: any = ({
       });
     });
     setProvinces(location);
-  }, []);
+  }, [value]);
 
   const handleClickOutside = () => {
     setShowDropdown(false);
