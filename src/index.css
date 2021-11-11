@@ -41,6 +41,7 @@
 }
 .city-selector-wrapper .city-selector-dropdown-wrapper {
   position: absolute;
+  width: 220px;
   z-index: 10;
   overflow: scroll;
   border-left: 1px solid #dbdbdb;
